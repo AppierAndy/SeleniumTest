@@ -12,50 +12,40 @@ Step 7. Click delete to move your email in trash.
 9. Click Trash.
 10. Check your email exist in trash.
 
-
-
 --------------
 1. Getting Started
-These instructions will get you a copy of the project up and running on your local machine for testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for testing purposes. 
 
-	a. Prerequisites
+	1.1.Prerequisites
 		What things you need to install the software and how to install them
 		Give examples
 
-	b.Installing
-		A step by step series of examples that tell you how to get a development env running
-		Say what the step will be
-
-		Give the example
-		And repeat
-		until finished
-		End with an example of getting some data out of the system or using it for a little demo
-
-
-2. Running the tests
-Explain how to run the automated tests for this system
-
-	a. Break down into end to end tests
-		Explain what these tests test and why
-		Give an example
+	1.2	Installing
+		(a) Chrome
+		 Computers have Chrome browser
+		 
+		(b) Change Gmail language to English
+		  (1) Open Gmail and login 
+		  (2) Click Setting icon > Settings
+		  (3) Change 'Gmail display language' to English and save changes
 		
-	b. And coding style tests
-		Explain what these tests test and why
-		Give an example
+		(c) Python 3.x & pip
+		 Make sure you've downloaded and installed python, pip and add the path to the environment variable.
+		  
+		(d)Envirement requirements:
+	      (1) Open your cmd 
+		  (2) Enter a folder path named HW
+		  (3) Run the command : pip install -r requirements
+		  (4) If display 'Selenium instll fail in 3.14.1', please run the command : pip install -U selenium 
+		
+		
+2. Running the tests
+	1.1 Open your cmd 
+	1.2 Enter a folder path named HW
+	1.3 Run the command : python Gmail_Test.py
 
-
-
-
-
-
-3. Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
-
-
-
-
-
-4. Authors
+	
+3. Authors
 ZongHao Lin 
 
 

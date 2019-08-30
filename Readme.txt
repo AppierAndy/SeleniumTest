@@ -17,23 +17,20 @@ Step 10. Check your email exist in trash.
 These instructions will get you a copy of the project up and running on your local machine for testing purposes. 
 
 	1.1.Prerequisites
-		What things you need to install the software and how to install them
-		Give examples
-
-	1.2	Installing
 		(a) Chrome
-		 Computers have Chrome browser
+		Computers have Chrome browser
 		 
 		(b) Change Gmail language to English
 		  (1) Open Gmail and login 
 		  (2) Click Setting icon > Settings
 		  (3) Change 'Gmail display language' to English and save changes
-		
-		(c) Python 3.x & pip
+
+	1.2 Installing
+		(a) Python 3.x & pip
 		 Make sure you've downloaded and installed python, pip and add the path to the environment variable.
 		  
-		(d)Envirement requirements:
-	      (1) Open your cmd 
+		(b)Envirement requirements:
+	    	  (1) Open your cmd 
 		  (2) Enter a folder path named HW
 		  (3) Run the command : pip install -r requirements
 		  (4) If display 'Selenium instll fail in 3.14.1', please run the command : pip install -U selenium 

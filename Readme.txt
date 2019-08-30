@@ -8,9 +8,9 @@ Step 4. Click Compose.
 Step 5. Input “your email” in To, input “Hello” in Subject, input “Word” in Mail Body & click Send.
 Step 6. Ensure your email exist in Inbox.
 Step 7. Click delete to move your email in trash.
-8. Click More.
-9. Click Trash.
-10. Check your email exist in trash.
+Step 8. Click More.
+Step 9. Click Trash.
+Step 10. Check your email exist in trash.
 
 --------------
 1. Getting Started

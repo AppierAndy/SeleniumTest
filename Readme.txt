@@ -17,9 +17,7 @@ Step 10. Check your email exist in trash.
 These instructions will get you a copy of the project up and running on your local machine for testing purposes. 
 
 	1.1.Prerequisites
-		(a) Chrome
-		Computers have Chrome browser
-		 
+		(a) Chrome: Computer has Chrome browser	 
 		(b) Change Gmail language to English
 		  (1) Open Gmail and login 
 		  (2) Click Setting icon > Settings
@@ -37,9 +35,10 @@ These instructions will get you a copy of the project up and running on your loc
 		
 		
 2. Running the tests
-	1.1 Open your cmd 
-	1.2 Enter a folder path named HW
-	1.3 Run the command : python Gmail_Test.py
+	1.1 Edit Config.ini (Testing Account,Password, Email Title and Content)
+	1.2 Open your cmd 
+	1.3 Enter a folder path named HW
+	1.4 Run the command : python Gmail_Test.py
 
 	
 3. Authors

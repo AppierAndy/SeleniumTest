@@ -174,6 +174,7 @@ class Gmail_Task(object):
 
 
     def checkTheTrashEmail(self):
+        time.sleep(1)
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH,self._TrashMailTitle)))
         #get_TrashMail_Receiver = self.driver.find_element(By.XPATH, self._TrashMailReceiver).get_attribute("innerHTML").split('</span>')[-1]
         get_TrashMail_Subject = self.driver.find_element(By.XPATH, self._TrashMailTitle).get_attribute("innerHTML").split('</span>')[-1]
@@ -191,7 +192,7 @@ class TestCases(Gmail_Task):
         try:
             self.enterUserAccount(user)
             self.clickContinueLink()
-            self.getEmailPassword()
+
             print("Step2: The account has been successfully entered.")
             return 'OK'
         except:
@@ -286,7 +287,7 @@ class TestCases(Gmail_Task):
             return 'OK'
         except:
             self.driver.quit()
-            print('Step9: The email does not move to trash successfully')
+            print('Step9: The email does not move to trash')
             return 'Fail'
 
 

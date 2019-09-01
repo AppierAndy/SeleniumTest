@@ -12,13 +12,9 @@ title = TestAccount.get(str('Email Title'), str('Title'))
 content = TestAccount.get(str('Email Content'),str('Content'))
 
 
-
-
 class GMail():
 
-
     def Test_Scripts(self):
-
         URL = 'https://mail.google.com'
         driver = webdriver.Chrome()
         driver.maximize_window()

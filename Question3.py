@@ -23,6 +23,7 @@ class Gmail_Task(object):
     #XPath Locators
     _EmailAccount = "//*[@id='identifierId']"
     _AccountContinue = "//*[@id='identifierNext']/span/span"
+    _GmailLogo = "//a[@title='Gmail']//img[contains(@class,'gb_pa')]"
     _EmailPassword = "//*[@id='password']/div[1]/div/div[1]/input"
     _PWDContinue = "//*[@id='passwordNext']/span/span"
     _Compose = "/html/body[@class='aAU']/div[7]/div[@class='nH']/div[@class='nH']//div[@class='aj9 pp']/div[@class='oo']//div[@class='aic']//div[@role='button']"
@@ -65,12 +66,18 @@ class Gmail_Task(object):
         self.getContinue().click()
 
 
+    def getGmailLogo(self):
+        return WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, self._GmailLogo)))
+
+
 
     def getEmailPassword(self):
         return self.driver.find_element(By.XPATH, self._EmailPassword)
 
     def enterEmailPassword(self,pwd):
+        time.sleep(1)
         return self.getEmailPassword().send_keys(pwd)
+
 
 
 
@@ -184,6 +191,7 @@ class TestCases(Gmail_Task):
         try:
             self.enterUserAccount(user)
             self.clickContinueLink()
+            self.getEmailPassword()
             print("Step2: The account has been successfully entered.")
             return 'OK'
         except:
@@ -196,7 +204,8 @@ class TestCases(Gmail_Task):
         try:
             self.enterEmailPassword(pwd)
             self.clickPWDContinueLink()
-            print("Step3: Login Success")
+            self.getGmailLogo()
+            print("Step3:Login Success")
             return 'OK'
         except:
             self.driver.quit()

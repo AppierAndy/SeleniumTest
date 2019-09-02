@@ -296,8 +296,10 @@ class TestCases(Gmail_Task):
         try:
             if self.checkTheTrashEmail() == (title, content):
                 print('Step10: The mail has been moved to the trash.')
+            else:
+                raise AssertionError
             return 'OK'
-        except:
+        except AssertionError:
             self.driver.quit()
             print('Step10: Cannot find the email in the trash.')
             return 'Fail'
